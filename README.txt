@@ -1,1 +1,1 @@
-CurseForge page: [Here](https://www.curseforge.com/minecraft/mc-mods/pick-tool)
+CurseForge page: https://www.curseforge.com/minecraft/mc-mods/pick-tool
