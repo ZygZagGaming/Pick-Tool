@@ -65,7 +65,6 @@ public class PickTool {
 
                 RayTraceResult target = mc.hitResult;
                 World world = mc.level;
-                ItemStack i = null;
 
                 if (target.getType() == RayTraceResult.Type.BLOCK) {
                     BlockPos pos = ((BlockRayTraceResult) target).getBlockPos();
@@ -74,12 +73,10 @@ public class PickTool {
                     if (state.isAir(world, pos)) return;
 
                     PlayerInventory inv = mc.player.inventory;
-                    List<ItemStack> hotbar = inv.items.subList(0, 9);
 
                     for (ItemStack stack : inv.items) {
                         if (stack.getItem().getToolTypes(stack).contains(state.getHarvestTool()) || ((state.getBlock() == Blocks.COBWEB || state.getBlock() == Blocks.BAMBOO) && stack.getItem() instanceof SwordItem)) {
                             mc.player.inventory.setPickedItem(stack);
-                            i = stack;
                             break;
                         }
                     }
