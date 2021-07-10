@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+[[mods]]
+modId="picktool"
+version="${file.jarVersion}"
+displayName="Pick Tool"
+logoFile="picktool.png"
+credits="ZygZag"
+authors="ZygZag"
+description="A mod that adds a \"Pick Tool\" control to pick the tool required for the block you're looking at."
+
+[[dependencies.picktool]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.picktool]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
